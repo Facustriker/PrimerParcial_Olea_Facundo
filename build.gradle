@@ -43,6 +43,6 @@ tasks.named('test') {
 
 jar {
 	manifest {
-		attributes 'ProyectoApirestApplication': 'com.utn.proyectoAPIREST_Paginacion.ProyectoApirestApplication'
+		attributes 'ProyectoApirest_PaginacionApplication': 'com.utn.proyectoAPIREST_Paginacion.ProyectoApirest_PaginacionApplication'
 	}
 }
