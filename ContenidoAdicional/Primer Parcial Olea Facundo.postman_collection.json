@@ -1,0 +1,780 @@
+{
+	"info": {
+		"_postman_id": "df796f8b-3b44-43fa-88da-e98c615e5767",
+		"name": "Primer Parcial Olea Facundo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30177056"
+	},
+	"item": [
+		{
+			"name": "PersonaRender",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas/paged?page=0&size=5&sort=id,asc",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0",
+									"description": "Pagina que quiero que busque"
+								},
+								{
+									"key": "size",
+									"value": "5",
+									"description": "Cant. de items por pagina"
+								},
+								{
+									"key": "sort",
+									"value": "id,asc",
+									"description": "OPIONAL, ordena"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas/4",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas/search?filtro=Juan",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"search"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Juan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas/searchPaged?filtro=a&page=0&size=4&sort=id,desc",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchPaged"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "a"
+								},
+								{
+									"key": "page",
+									"value": "0",
+									"description": "Pagina que quiero que busque"
+								},
+								{
+									"key": "size",
+									"value": "4",
+									"description": "Cant. de items por pagina"
+								},
+								{
+									"key": "sort",
+									"value": "id,desc",
+									"description": "OPCIONAL, ordena"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchJPQL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas/searchJPQL?filtro=Juan",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchJPQL"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Juan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchJPQL Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas/searchJPQLPaged?filtro=Juan&page=0&size=4&sort=id,desc",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchJPQLPaged"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Juan"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "4"
+								},
+								{
+									"key": "sort",
+									"value": "id,desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchNative",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas/searchNative?filtro=Juan",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchNative"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Juan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchNative Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas/searchNativePaged?filtro=Juan&page=0&size=5&sort=id,desc",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchNativePaged"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Juan"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "sort",
+									"value": "id,desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Juan\",\r\n    \"apellido\": \"Pedernera\",\r\n    \"dni\": 38769092,\r\n    \"domicilio\": {\r\n            \"calle\": \"San Justo\",\r\n            \"numero\": 1377,\r\n            \"localidad\": {\r\n                \"denominacion\": \"San Martin\"\r\n            }\r\n        },\r\n        \"libros\": [\r\n            {\r\n                \"titulo\": \"Mi tia es hombre\",\r\n                \"fecha\": 2001,\r\n                \"genero\": \"Terror\",\r\n                \"paginas\": 2900,\r\n                \"autores\": [\r\n                    {\r\n                        \"nombre\": \"Alba\",\r\n                        \"apellido\": \"Ñil\",\r\n                        \"biografia\": \"Alba Ñil es un reconocido autor Nigeriano nacido en China de padre Argentino y Madre Peruana. Desde los 2 años le gusta tocar el piano, escribir en griego y antar canciones de BadBunny. Estudió Abogacía, Física, Arquitectura, Química y Ballet pero se dió cuenta de su pasión por la escritura cuando una vez falsificó una receta médica en Nicaragua para no tener que declarar en la aduana 17 cajas de muñecas inflables\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n}"
+						},
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"nombre\": \"Pedro\",\r\n    \"apellido\": \"Paco\",\r\n    \"domicilio\": {\r\n        \"id\": 4,\r\n        \"calle\": \"Belgrano\",\r\n        \"numero\": 1899,\r\n        \"localidad\": {\r\n            \"id\": 4,\r\n            \"denominacion\": \"Guaymallen\"\r\n        }\r\n    },\r\n    \"libros\": [\r\n        {\r\n            \"id\": 4,\r\n            \"titulo\": \"Me encontre un chicle tirado en el micro\",\r\n            \"fecha\": 2001,\r\n            \"genero\": \"Terror\",\r\n            \"paginas\": 2900,\r\n            \"autores\": [\r\n                {\r\n                    \"id\": 4,\r\n                    \"nombre\": \"Clara\",\r\n                    \"apellido\": \"Mente\",\r\n                    \"biografia\": \"Clara Mente es una famosa artista plástica, escultora, pintora y cartonera que tiene 3 paraisos fiscales. Médica a los 10, Clara se dedicó a veneder tergopol a inmigrantes del sur de Suiza a cambio de acciones en Tinder. Para lavar sus medias y dinero, se puso a escribir novelas para adolescentes con ludopatía con la esperanza de encontrar su verdadero amor: un reggaetonero sin trabajo pero con buen gusto para los estupefacientes\"\r\n                }\r\n            ]\r\n        }\r\n    ],\r\n    \"dni\": 40218745\r\n}"
+						},
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas/4",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://primerparcial-olea-facundo.onrender.com/api/v1/personas/3",
+							"protocol": "https",
+							"host": [
+								"primerparcial-olea-facundo",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PersonaLocal",
+			"item": [
+				{
+					"name": "Get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas/paged?page=0&size=5&sort=id,asc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0",
+									"description": "Pagina que quiero que busque"
+								},
+								{
+									"key": "size",
+									"value": "5",
+									"description": "Cant. de items por pagina"
+								},
+								{
+									"key": "sort",
+									"value": "id,asc",
+									"description": "OPIONAL, ordena"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get one",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas/search?filtro=Paco",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"search"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Paco"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas/searchPaged?filtro=a&page=0&size=4&sort=id,desc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchPaged"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "a"
+								},
+								{
+									"key": "page",
+									"value": "0",
+									"description": "Pagina que quiero que busque"
+								},
+								{
+									"key": "size",
+									"value": "4",
+									"description": "Cant. de items por pagina"
+								},
+								{
+									"key": "sort",
+									"value": "id,desc",
+									"description": "OPCIONAL, ordena"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchJPQL",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas/searchJPQL?filtro=Juan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchJPQL"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Juan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchJPQL Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas/searchJPQLPaged?filtro=Juan&page=0&size=4&sort=id,desc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchJPQLPaged"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Juan"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "4"
+								},
+								{
+									"key": "sort",
+									"value": "id,desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchNative",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas/searchNative?filtro=Juan",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchNative"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Juan"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchNative Paged",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas/searchNativePaged?filtro=Juan&page=0&size=5&sort=id,desc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"searchNativePaged"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Juan"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "5"
+								},
+								{
+									"key": "sort",
+									"value": "id,desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Juan\",\r\n    \"apellido\": \"Pedernera\",\r\n    \"dni\": 38769092,\r\n    \"domicilio\": {\r\n            \"calle\": \"San Justo\",\r\n            \"numero\": 1377,\r\n            \"localidad\": {\r\n                \"denominacion\": \"San Martin\"\r\n            }\r\n        },\r\n        \"libros\": [\r\n            {\r\n                \"titulo\": \"Mi tia es hombre\",\r\n                \"fecha\": 2001,\r\n                \"genero\": \"Terror\",\r\n                \"paginas\": 2900,\r\n                \"autores\": [\r\n                    {\r\n                        \"nombre\": \"Alba\",\r\n                        \"apellido\": \"Ñil\",\r\n                        \"biografia\": \"Alba Ñil es un reconocido autor Nigeriano nacido en China de padre Argentino y Madre Peruana. Desde los 2 años le gusta tocar el piano, escribir en griego y antar canciones de BadBunny. Estudió Abogacía, Física, Arquitectura, Química y Ballet pero se dió cuenta de su pasión por la escritura cuando una vez falsificó una receta médica en Nicaragua para no tener que declarar en la aduana 17 cajas de muñecas inflables\"\r\n                    }\r\n                ]\r\n            }\r\n        ]\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 4,\r\n    \"nombre\": \"Pedro\",\r\n    \"apellido\": \"Paco\",\r\n    \"domicilio\": {\r\n        \"id\": 4,\r\n        \"calle\": \"Belgrano\",\r\n        \"numero\": 1899,\r\n        \"localidad\": {\r\n            \"id\": 4,\r\n            \"denominacion\": \"Guaymallen\"\r\n        }\r\n    },\r\n    \"libros\": [\r\n        {\r\n            \"id\": 4,\r\n            \"titulo\": \"Me encontre un chicle tirado en el micro\",\r\n            \"fecha\": 2001,\r\n            \"genero\": \"Terror\",\r\n            \"paginas\": 2900,\r\n            \"autores\": [\r\n                {\r\n                    \"id\": 4,\r\n                    \"nombre\": \"Clara\",\r\n                    \"apellido\": \"Mente\",\r\n                    \"biografia\": \"Clara Mente es una famosa artista plástica, escultora, pintora y cartonera que tiene 3 paraisos fiscales. Médica a los 10, Clara se dedicó a veneder tergopol a inmigrantes del sur de Suiza a cambio de acciones en Tinder. Para lavar sus medias y dinero, se puso a escribir novelas para adolescentes con ludopatía con la esperanza de encontrar su verdadero amor: un reggaetonero sin trabajo pero con buen gusto para los estupefacientes\"\r\n                }\r\n            ]\r\n        }\r\n    ],\r\n    \"dni\": 40218745\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/personas/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
