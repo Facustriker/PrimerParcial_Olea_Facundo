@@ -14,7 +14,7 @@ Este es el diagrama de clases utilizado para realizar la implementacion del proy
 La colección de PostMan a usarse junto con el proyecto se ha exportado en formato JSON y se puede descargar como .rar desde [aqui](https://github.com/Facustriker/PrimerParcial_Olea_Facundo/raw/main/ContenidoAdicional/Primer%20Parcial%20Olea%20Facundo.postman_collection.rar)
 
 ## .JAR GENERADO DEL PROYECTO
-Debido a las restricciones de tamaño de GitHub el .jar no se encuentra en el repositorio por lo tanto se debe crear manualmente con el comando `gradle build` desde la terminal del IDE. Sin embargo, si se lo quiere descargar está disponible desde este [link](https://drive.google.com/file/d/11R_BpEnrW8nqRrntvcK6KsxI7_3TvzPM/view?usp=drive_link)
+Debido a las restricciones de tamaño de GitHub el .jar no se encuentra en el repositorio por lo tanto se debe crear manualmente con el comando `gradle build` desde la terminal del IDE. Sin embargo, si se lo quiere descargar está disponible desde este [link](https://drive.google.com/file/d/1E3ZPDD4YwSNqYp3TEJ1W9anRijIlx2pd/view?usp=sharing)
 
 ## LINK A RENDER
 Se puede acceder al deploy en Render desde [aqui](https://dashboard.render.com/web/srv-ckgsb7q12bvs73987gig/deploys/dep-ckgsf4212bvs739clogg)
